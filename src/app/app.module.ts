@@ -1,18 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { IonicModule } from '@ionic/angular';
+import { HomeComponent } from './pages/home/home.component';
+import { DetailComponent } from './pages/detail/detail.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    DetailComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    IonicModule.forRoot(),
+    GraphQLModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

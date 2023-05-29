@@ -1,0 +1,18 @@
+<ion-card class="card">
+  <img [alt]="character.name" [src]="character.image" />
+  <ion-card-header>
+    <ion-card-title>{{ character.name }}</ion-card-title>
+    <ion-card-subtitle
+      ><h3>Status:</h3>
+      {{ character.status }}</ion-card-subtitle
+    >
+    <ion-card-subtitle
+      ><h3>Species:</h3>
+      {{ character.species }}</ion-card-subtitle
+    >
+    <ion-card-subtitle
+      ><h3>Gender:</h3>
+      {{ character.gender }}</ion-card-subtitle
+    >
+  </ion-card-header>
+</ion-card>
